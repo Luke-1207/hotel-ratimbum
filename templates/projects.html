@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Projetos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('projects') }}">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Meus Projetos</h1>
+        <ul>
+            <li>
+                <h2>Projeto 1</h2>
+                <p>Descrição do Projeto 1.</p>
+            </li>
+            <li>
+                <h2>Projeto 2</h2>
+                <p>Descrição do Projeto 2.</p>
+            </li>
+            <!-- Adicione mais projetos conforme necessário -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Lucas Fabiano Peres Silva</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h2>Lucas Fabiano Peres Silva</h2>
+        <p>Profissional Fullstack | Java (Springboot, Quarkus), Angular, Typescript, Docker, AWS, Bancos de Dados, Git</p>
+    </header>
+
+    <section id="sobre" class="container my-4 p-4 bg-white rounded shadow">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQG4O6Pj-FPptQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1681480222206?e=2147483647&v=beta&t=IvoVz7usr5-X5zTMV757sORuHC4e4MgQ_hRbm59SJuY" alt="Foto de Lucas Fabiano Peres Silva" class="img-fluid rounded-circle mx-auto d-block" style="width: 150px; height: 150px;">
+        <h3 class="mt-3">Sobre</h3>
+        <p>Desenvolvedor fullstack com expertise em Java (Springboot e Quarkus), Angular, e Typescript no frontend.
+            Tenho experiência com Docker, AWS, bancos de dados e Git, e sou apaixonado por criar soluções eficientes e escaláveis.
+            Estou sempre em busca de novas tecnologias e das melhores práticas para entregar software de qualidade.</p>
+    </section>
+
+    <section id="projetos" class="container my-4 p-4 bg-white rounded shadow">
+        <h3>Projetos</h3>
+        <ul class="list-unstyled">
+            <li class="mb-3">
+                <a href="https://github.com/Luke-1207/Med.Voll_SpringBoot" target="_blank" class="text-primary">MedVoll API</a>
+                <p>Meu primeiro projeto utilizando Spring Boot, focado no Backend, consiste em desenvolver uma API
+                    Rest para uma clínica médica. O objetivo principal é implementar os métodos CRUD (Create, Read, Update e Delete).</p>
+            </li>
+            <li>
+                <a href="https://github.com/Luke-1207/Memoteca" target="_blank" class="text-primary">Memoteca</a>
+                <p>Meu primeiro projeto com Angular, focado na componentização e no aprendizado com frontend. Consiste em realizar uma
+                    biblioteca de frases, trechos, letras de música, etc.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contatos" class="container my-4 p-4 bg-white rounded shadow">
+        <h3>Contatos</h3>
+        <ul class="list-unstyled">
+            <li><a href="https://www.instagram.com/_luluccas" target="_blank" class="text-primary">Instagram</a></li>
+            <li><a href="mailto:lucasfabiano1207@gmail.com" class="text-primary">Email</a></li>
+            <li><a href="https://br.linkedin.com/in/lucas-fabiano-peres-silva-70390424a" target="_blank" class="text-primary">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Lucas Fabiano Peres Silva</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
