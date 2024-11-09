@@ -28,7 +28,7 @@ def login():
     else:
         return jsonify({"message": "Email ou senha inválidos!"}), 401
 
-@main.route('/logout')
+@main.route('/logout', methods=['POST'])
 @login_required
 def logout():
     logout_user()
@@ -65,6 +65,43 @@ def reservar_quarto():
         return jsonify({"message": "Quarto reservado com sucesso!"}), 201
     else:
         return jsonify({"message": "Quarto não disponível para reserva."}), 400
+
+
+@main.route('/minhas-reservas', methods=['GET'])
+@login_required
+def minhas_reservas():
+    reservas = Reserva.query.filter_by(id_usuario=current_user.id_usuario).all()
+    reservas_info = []
+
+    for reserva in reservas:
+        quarto = Quarto.query.get(reserva.id_quarto)
+
+        reservas_info.append({
+            "id_reserva": reserva.id_reserva,
+            "id_quarto": reserva.id_quarto,
+            "tipo_quarto": quarto.tipo,
+            "status_quarto": quarto.status,
+            "data_entrada": reserva.data_entrada.strftime('%Y-%m-%d'),
+            "data_saida": reserva.data_saida.strftime('%Y-%m-%d'),
+            "preco": reserva.preco,
+            "status_pagamento": reserva.status_pagamento
+        })
+
+    if reservas_info:
+        return jsonify({"reservas": reservas_info}), 200
+    else:
+        return jsonify({"message": "Você não tem reservas no momento."}), 404
+
+@main.route('/pagar-reserva/<int:id_reserva>', methods=['PUT'])
+@login_required
+def pagar_reserva(id_reserva):
+    reserva = Reserva.query.get(id_reserva)
+    if reserva and reserva.id_usuario == current_user.id_usuario:
+        reserva.status_pagamento = True
+        db.session.commit()
+        return jsonify({"message": "Pagamento realizado com sucesso!"}), 200
+    else:
+        return jsonify({"message": "Reserva não encontrada ou acesso negado."}), 404
 
 @main.route('/editar-reserva/<int:id_reserva>', methods=['PUT'])
 @login_required
