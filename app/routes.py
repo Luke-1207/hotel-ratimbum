@@ -1,4 +1,4 @@
-from flask import Blueprint, request, redirect, url_for, flash, jsonify
+from flask import Blueprint, request, redirect, url_for, flash, jsonify, render_template
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from app import db, login_manager
@@ -11,9 +11,13 @@ main = Blueprint('main', __name__)
 def index():
     return render_template('index.html')
 
-@main.route('/projects')
-def projects():
-    return render_template('projects.html')
+@main.route('/booking')
+def booking():
+    return render_template('booking.html')
+
+@main.route('/mybooking')
+def mybooking():
+    return render_template('mybooking.html')
 
 @main.route('/login', methods=['POST'])
 def login():
