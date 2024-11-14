@@ -1,6 +1,6 @@
-from app import db
+from application import db
 from flask_login import UserMixin
-from app import login_manager
+from application import login_manager
 
 @login_manager.user_loader
 def load_user(user_id):

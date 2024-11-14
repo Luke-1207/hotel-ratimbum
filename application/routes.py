@@ -1,8 +1,8 @@
 from flask import Blueprint, request, redirect, url_for, flash, jsonify, render_template
 from flask_login import login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-from app import db, login_manager
-from app.models import Usuario, Quarto, Reserva
+from application import db, login_manager
+from application.models import Usuario, Quarto, Reserva
 from datetime import datetime
 
 main = Blueprint('main', __name__)

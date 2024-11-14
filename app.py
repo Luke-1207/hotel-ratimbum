@@ -1,5 +1,4 @@
-from app import create_app, db
-from app.models import Usuario, Quarto, Reserva
+from application import create_app, db
 from flask_cors import CORS
 from populate_db import populate_database
 
