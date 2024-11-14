@@ -62,7 +62,7 @@
                 const dataEntrada = document.getElementById(`data_entrada_${reserva.id_reserva}`).value;
                 const dataSaida = document.getElementById(`data_saida_${reserva.id_reserva}`).value;
 
-                fetch(`http://127.0.0.1:5000/editar-reserva/${reserva.id_reserva}`, {
+                fetch(`http://0.0.0.0:10000/editar-reserva/${reserva.id_reserva}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -86,7 +86,7 @@
 
             function excluirReserva(reserva) {
                 const id = reserva.id_reserva;
-                fetch(`http://127.0.0.1:5000/excluir-reserva/${id}`, {
+                fetch(`http://0.0.0.0:10000/excluir-reserva/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'
@@ -105,7 +105,7 @@
             }
 
             function minhasreservas() {
-                fetch('http://127.0.0.1:5000/minhas-reservas', {
+                fetch('http://0.0.0.0:10000/minhas-reservas', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'

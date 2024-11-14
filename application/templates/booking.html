@@ -70,7 +70,7 @@
         ];
 
         function buscar_quartos() {
-            fetch('http://127.0.0.1:5000/quartos-disponiveis', {
+            fetch('http://0.0.0.0:10000/quartos-disponiveis', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
@@ -139,7 +139,7 @@
             if (quartosFiltrados.length > 0) {
                 const quarto = quartosFiltrados[0];
                 console.log(quarto)
-                fetch('http://127.0.0.1:5000/reservar-quarto', {
+                fetch('http://0.0.0.0:10000/reservar-quarto', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
