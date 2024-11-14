@@ -3,7 +3,7 @@ from flask_cors import CORS
 from populate_db import populate_database
 
 app = create_app()
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://hotel-ratimbum-1.onrender.com"}})
 
 # Cria as tabelas no banco de dados
 with app.app_context():
