@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f035bc27-3c66-453a-a7e4-47b36b28b545" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/app/templates/booking.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/mybooking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Portifolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Portifolio.iml" afterDir="false" />
@@ -16,6 +17,11 @@
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/projects.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/instance/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/site.db" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/Portifolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Portifolio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< Updated upstream
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
@@ -47,6 +54,22 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+=======
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MatheusA23"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Luke-1207/hotel-ratimbum.git",
+    "accountId": "0451e381-1f38-4b78-9848-262db2477fc8"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -57,6 +80,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
@@ -76,8 +100,24 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> Stashed changes
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MM56Q3K\PycharmProjects\hotel-ratimbum\app\static" />
@@ -102,12 +142,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724890397427</updated>
+<<<<<<< Updated upstream
       <workItem from="1731421992531" duration="5300000" />
       <workItem from="1731445903417" duration="3243000" />
       <workItem from="1731449280267" duration="2140000" />
       <workItem from="1731455936418" duration="5750000" />
       <workItem from="1731495654653" duration="16355000" />
       <workItem from="1731523187194" duration="12430000" />
+=======
+      <workItem from="1731158890160" duration="6823000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -124,7 +168,17 @@
       <map>
         <entry key="9d48b09e-e965-441a-b8d7-b958c31a0ea4">
           <value>
+<<<<<<< Updated upstream
             <State />
+=======
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+>>>>>>> Stashed changes
           </value>
         </entry>
         <entry key="MAIN">
@@ -135,6 +189,7 @@
       </map>
     </option>
   </component>
+<<<<<<< Updated upstream
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -151,4 +206,6 @@
     <SUITE FILE_PATH="coverage/hotel_ratimbum$populate_db.coverage" NAME="populate_db Coverage Results" MODIFIED="1731364848947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hotel_ratimbum$app.coverage" NAME="app Coverage Results" MODIFIED="1731528746804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+=======
+>>>>>>> Stashed changes
 </project>
