@@ -70,7 +70,7 @@
         ];
 
         function buscar_quartos() {
-            fetch('http://0.0.0.0:10000/quartos-disponiveis', {
+            fetch("{{ url_for('main.listar_quartos_disponiveis_route') }}", {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
@@ -139,7 +139,7 @@
             if (quartosFiltrados.length > 0) {
                 const quarto = quartosFiltrados[0];
                 console.log(quarto)
-                fetch('http://0.0.0.0:10000/reservar-quarto', {
+                fetch("{{ url_for('main.reservar_quarto_route') }}", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -153,10 +153,7 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
-                    if (data.message === "Quarto reservado com sucesso!") {
-                         window.location.href = '/mybooking';
-                    }
+                     window.location.href = '/mybooking';
                 });
             } else {
                 alert('Não há quartos disponíveis do tipo selecionado.');
@@ -174,10 +171,13 @@
             window.location.href = '/mybooking';
         }
 
-        document.addEventListener('DOMContentLoaded', (event) => {
-            buscar_quartos();
+        document.addEventListener("DOMContentLoaded", function() {
             preencherSelect(tiposDeQuarto);
+            buscar_quartos();
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

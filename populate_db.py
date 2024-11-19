@@ -1,13 +1,17 @@
 from application import create_app, db
-from application.models import Usuario, Quarto
+from application.models import Usuario, Quarto, Reserva
 from werkzeug.security import generate_password_hash
 
 app = create_app()
 
+
 def populate_database():
     with app.app_context():
-        db.drop_all()
-        db.create_all()
+        db.session.query(Usuario).delete()
+        db.session.query(Quarto).delete()
+        db.session.query(Reserva).delete()
+
+        db.session.commit()
 
         user = Usuario(
             nome="Cliente Teste",
